@@ -89,3 +89,4 @@ compile_commands.json
 .cache/
 .ropeproject/
 .tmplock
+.idea
