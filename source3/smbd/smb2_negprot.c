@@ -18,17 +18,17 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "../lib/tsocket/tsocket.h"
-#include "../libcli/smb/smb2_negotiate_context.h"
+#include "includes.h"
+#include "smbd/smbd.h"
+#include "smbd/globals.h"
 #include "../libcli/smb/smb_common.h"
-#include "../libcli/smb/smb_signing.h"
+#include "../libcli/smb/smb2_negotiate_context.h"
+#include "../lib/tsocket/tsocket.h"
 #include "../librpc/ndr/libndr.h"
+#include "../libcli/smb/smb_signing.h"
 #include "auth.h"
 #include "auth/gensec/gensec.h"
-#include "includes.h"
 #include "lib/util/string_wrappers.h"
-#include "smbd/globals.h"
-#include "smbd/smbd.h"
 #include "source3/lib/substitute.h"
 #ifdef HAVE_VALGRIND_CALLGRIND_H
 #include <valgrind/callgrind.h>
